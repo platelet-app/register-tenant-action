@@ -11,12 +11,18 @@ inputs:
   awsRegion:
     required: true
     description: 'aws region'
-  apiURL:
+  tenantApiUrl:
     required: true
     description: 'GraphQL API URL'
   tenantName:
     required: true
     description: 'name of the tenant'
+  adminName:
+    required: false
+    description: 'name of the admin'
+  adminEmail:
+    required: false
+    description: 'email address of the admin'
 runs:
   using: 'node16'
   main: 'dist/index.js'
