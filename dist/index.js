@@ -53,6 +53,11 @@ const request = (queryDetails) => __awaiter(void 0, void 0, void 0, function* ()
     const region = core.getInput("awsRegion");
     const accessKeyId = core.getInput("awsAccessKeyId");
     const secretAccessKey = core.getInput("awsSecretAccessKey");
+    console.log("apiURL", apiURL);
+    console.log("region", region);
+    console.log("accessKeyId", accessKeyId.length);
+    console.log("secretAccessKey", secretAccessKey.length);
+    console.log("queryDetails", queryDetails);
     const endpoint = new URL(apiURL);
     const credentials = {
         accessKeyId,
