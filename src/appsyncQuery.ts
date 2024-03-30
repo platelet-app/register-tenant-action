@@ -18,8 +18,6 @@ const request = async (queryDetails: { variables: any; query: string }) => {
   const secretAccessKey = core.getInput("awsSecretAccessKey");
   console.log("apiURL", apiURL);
   console.log("region", region);
-  console.log("accessKeyId", accessKeyId.length);
-  console.log("secretAccessKey", secretAccessKey.length);
   console.log("queryDetails", queryDetails);
 
   const endpoint = new URL(apiURL);
