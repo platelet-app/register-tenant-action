@@ -5,7 +5,7 @@ async function run(): Promise<void> {
   try {
     const tenantName = core.getInput("tenantName");
     const name = core.getInput("adminName");
-    const emailAddress = core.getInput("adminEmailAddress");
+    const emailAddress = core.getInput("adminEmail");
     const existingTenant = await getTenantByName({ name: tenantName });
     if (!existingTenant) {
       if (!tenantName) {
