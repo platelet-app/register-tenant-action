@@ -7,6 +7,7 @@ async function run(): Promise<void> {
     const name = core.getInput("adminName");
     const emailAddress = core.getInput("adminEmail");
     const existingTenant = await getTenantByName({ name: tenantName });
+    console.log("Existing tenant: ", existingTenant);
     if (!existingTenant) {
       if (!tenantName) {
         throw new Error("Tenant name is required");
