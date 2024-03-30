@@ -61,7 +61,7 @@ export const registerTenantQuery = async (
   input: RegisterTenantMutationVariables
 ) => {
   const response = await request({
-    variables: { input },
+    variables: input,
     query: registerTenant,
   });
   const body = await response.json();

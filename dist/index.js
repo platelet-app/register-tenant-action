@@ -92,7 +92,7 @@ const errorCheck = (body) => {
 const registerTenantQuery = (input) => __awaiter(void 0, void 0, void 0, function* () {
     var _a;
     const response = yield request({
-        variables: { input },
+        variables: input,
         query: mutations_1.registerTenant,
     });
     const body = yield response.json();
