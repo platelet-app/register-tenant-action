@@ -76,5 +76,7 @@ export const getTenantByName = async (
   });
   const body = await response.json();
   errorCheck(body);
+
+  console.log("aaaa: ", body?.data?.getTenant?.items);
   return body?.data?.getTenant?.items[0] || null;
 };
