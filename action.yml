@@ -1,0 +1,22 @@
+name: 'Register new tenant'
+description: 'Register a new tenant on platelet'
+author: 'Theo Cranmore'
+inputs:
+  awsAccessKeyId:
+    required: true
+    description: 'aws access key id'
+  awsSecretAccessKey:
+    required: true
+    description: 'aws access key secret'
+  awsRegion:
+    required: true
+    description: 'aws region'
+  apiURL:
+    required: true
+    description: 'GraphQL API URL'
+  tenantName:
+    required: true
+    description: 'name of the tenant'
+runs:
+  using: 'node16'
+  main: 'dist/index.js'
