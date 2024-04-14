@@ -1,4 +1,7 @@
 // amplify/backend/function/appsyncOperations/opt/appSyncRequest.js
+/**
+ * @type {import('@types/aws-lambda').APIGatewayProxyHandler}
+ */
 import * as core from "@actions/core";
 import { Sha256 } from "@aws-crypto/sha256-js";
 import { SignatureV4 } from "@aws-sdk/signature-v4";
