@@ -41,9 +41,6 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.getTenantByName = exports.registerTenantQuery = void 0;
 // amplify/backend/function/appsyncOperations/opt/appSyncRequest.js
-/**
- * @type {import('@types/aws-lambda').APIGatewayProxyHandler}
- */
 const core = __importStar(__nccwpck_require__(2186));
 const sha256_js_1 = __nccwpck_require__(81);
 const signature_v4_1 = __nccwpck_require__(7776);
